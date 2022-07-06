@@ -1,8 +1,50 @@
 .navbar-custom {
-    background-color: white;
-    font-weight: bold;
+  background-color: white;
+  font-weight: bold;
 }
 
-.body-home{
-    font-family: 'Montserrat', sans-serif;
+#brand {
+  color: #a30016;
+}
+
+.body-home {
+  font-family: "Montserrat", sans-serif;
+}
+
+.dekor1 {
+  z-index: 1;
+  position: absolute;
+  width: 80px;
+  height: 140px;
+  background: #a30016;
+  border-radius: 0px 0px 80px 0px;
+}
+
+.ms-15{
+    margin-left:15rem!important
+}
+
+.li-nav-custom {
+    font-size: 14px;
+    color: black!important;
+}
+
+.li-nav-custom {
+    font-size: 14px;
+    color: black!important;
+}
+
+a.li-nav-custom:hover {
+    color: #FF6464!important;
+}
+
+.active-custom {
+    color: #FF6464!important;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
 }
