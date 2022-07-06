@@ -12,7 +12,7 @@
 }
 
 .dekor1 {
-    z-index: 1;
+  z-index: 1;
   position: absolute;
   width: 80px;
   height: 140px;
@@ -20,10 +20,31 @@
   border-radius: 0px 0px 80px 0px;
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
+.ms-15{
+    margin-left:15rem!important
+}
 
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-  }
+.li-nav-custom {
+    font-size: 14px;
+    color: black!important;
+}
+
+.li-nav-custom {
+    font-size: 14px;
+    color: black!important;
+}
+
+a.li-nav-custom:hover {
+    color: #FF6464!important;
+}
+
+.active-custom {
+    color: #FF6464!important;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+}
