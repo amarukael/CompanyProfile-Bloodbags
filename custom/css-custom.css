@@ -14,37 +14,62 @@
 .dekor1 {
   z-index: 1;
   position: absolute;
-  width: 80px;
+  width: 50px;
   height: 140px;
   background: #a30016;
   border-radius: 0px 0px 80px 0px;
 }
 
-.ms-15{
-    margin-left:15rem!important
+.ms-15 {
+  margin-left: 0rem !important;
+}
+.ms-10 {
+  margin-left: 5rem !important;
 }
 
 .li-nav-custom {
-    font-size: 14px;
-    color: black!important;
+  font-size: 14px;
+  color: black !important;
 }
 
 .li-nav-custom {
-    font-size: 14px;
-    color: black!important;
+  font-size: 14px;
+  color: black !important;
 }
 
 a.li-nav-custom:hover {
-    color: #FF6464!important;
+  color: #ff6464 !important;
 }
 
 .active-custom {
-    color: #FF6464!important;
+  color: #ff6464 !important;
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
+  .dekor1 {
+    z-index: 1;
+    position: absolute;
+    width: 50px;
+    height: 140px;
+    background: #a30016;
+    border-radius: 0px 0px 80px 0px;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  .dekor1 {
+    z-index: 1;
+    position: absolute;
+    width: 80px;
+    height: 140px;
+    background: #a30016;
+    border-radius: 0px 0px 80px 0px;
+  }
+  .ms-10 {
+    margin-left: 10rem !important;
+  }
+  .ms-15 {
+    margin-left: 15rem !important;
+  }
 }
