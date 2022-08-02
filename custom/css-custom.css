@@ -5,21 +5,25 @@
 
 header {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background-color: #FFF7F7;
 }
+
 header .navbar {
   background-color: transparent !important;
 }
+
 header .container .row .col-md-6 {
   height: 70vh;
   display: flex;
   align-items: center;
 }
+
 header .container h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
-  color: #a30016;;
+  color: #a30016;
+  ;
 }
 
 #brand {
@@ -30,9 +34,10 @@ header .container h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-.gayaNav{
+.gayaNav {
   margin-left: 120px !important;
 }
+
 .dekor1 {
   z-index: 1;
   position: absolute;
@@ -45,6 +50,7 @@ header .container h1 {
 .ms-15 {
   margin-left: 0rem !important;
 }
+
 .ms-10 {
   margin-left: 5rem !important;
 }
@@ -67,7 +73,25 @@ a.li-nav-custom:hover {
   color: #ff6464 !important;
 }
 
+.advantage{
+  height: 80vh;
+}
+.custom-list {
+  list-style: none;
+}
+
+.number-list {
+  padding: 10px;
+  background-color: #ECECEC;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  color: #a30016;
+}
+
 @media only screen and (min-width: 600px) {
+
   /* For tablets: */
   .dekor1 {
     z-index: 1;
@@ -78,7 +102,9 @@ a.li-nav-custom:hover {
     border-radius: 0px 0px 80px 0px;
   }
 }
+
 @media only screen and (min-width: 768px) {
+
   /* For desktop: */
   .dekor1 {
     z-index: 1;
@@ -88,9 +114,11 @@ a.li-nav-custom:hover {
     background: #a30016;
     border-radius: 0px 0px 80px 0px;
   }
+
   .ms-10 {
     margin-left: 10rem !important;
   }
+
   .ms-15 {
     margin-left: 15rem !important;
   }
