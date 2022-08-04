@@ -10,7 +10,6 @@
 
 header {
   width: 100%;
-  height: 85vh;
   background-color: #FFF7F7;
 }
 
@@ -75,7 +74,7 @@ a.li-nav-custom:hover {
 }
 
 .advantage{
-  height: 80vh;
+  height: 100%;
 }
 .custom-list {
   list-style: none;
