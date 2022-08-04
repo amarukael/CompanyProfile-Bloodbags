@@ -1,3 +1,8 @@
+.body-home {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
 .navbar-custom {
   background-color: #FFF7F7;
   font-weight: bold;
@@ -28,10 +33,6 @@ header .container h1 {
 
 #brand {
   color: #a30016;
-}
-
-.body-home {
-  font-family: "Montserrat", sans-serif;
 }
 
 .gayaNav {
@@ -87,6 +88,33 @@ a.li-nav-custom:hover {
   width: 50px;
   height: 50px;
   font-weight: bold;
+  color: #a30016;
+}
+
+.top-news{
+  height: 100%;
+}
+.see-faq{
+  height: 45vh;
+}
+
+footer{
+  background-color: #FFF7F7;
+  font-size: 10pt;
+}
+
+.footer-down{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #a30016;
+}
+
+.show-hide{
+  height: 20px;
+  font-size: 10pt;
+  outline: none;
+  border: none;
+  background-color: transparent;
   color: #a30016;
 }
 

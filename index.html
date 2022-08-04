@@ -57,7 +57,7 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-md-6">
           <div class="header-description">
             <h5 class="pb-4" style="color: #a30016;">Welcome!</h5>
             <h1 class="pb-4">"Give and Save, Let's Donate Blood"</h1>
@@ -66,11 +66,13 @@
               Yogyakarta area.
             </p>
 
-            <button type="button" class="btn btn-danger px-4" style="background-color: #a30016;"><i class="fa me-2">&#xf019;</i>Download App</button>
-            <button type="button" class="btn btn-outline-danger px-5 ms-2">Learn More</button>
+            <button onclick="location.href='https://github.com/amarukael/BloodBags/releases/download/tester/bloodbags.apk';" type="button" class="btn btn-danger px-4" style="background-color: #a30016;" ><i
+                class="fa me-2">&#xf019;</i>Download App</button>
+            <button type="button" class="btn btn-outline-danger px-5 ms-2"
+              style="background-color: white; color: #a30016;">Learn More</button>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-md-6">
           <div class="header-image" style="margin-top: 100px;">
             <img src="/img/image.png" alt="" width="100%" height="100%">
           </div>
@@ -81,45 +83,232 @@
   <section class="advantage">
     <div class="container">
       <h2 class="mt-5">Why Should Bloodbags</h1>
-      <p class="text-muted mt-4">Because it was built specifically to make it easier for donors to donate blood and help <br>
-        people who need blood get information about the availability of blood.</p>
-      <div class="row mt-5">
-        <div class="left-side col-12 col-md-6 d-flex justify-content-center">
-          <img src="img/appblood.png" alt="mobile-blood">
+        <p class="text-muted mt-4">Because it was built specifically to make it easier for donors to donate blood and
+          help <br>
+          people who need blood get information about the availability of blood.</p>
+        <div class="row mt-5">
+          <div class="left-side col-12 col-md-6 d-flex justify-content-center">
+            <img src="img/appblood.png" alt="mobile-blood">
+          </div>
+          <div class="right-side col-12 col-md-6">
+            <h3>Featured Advantages</h3>
+            <p class="text-muted">With this, we want to make it easier for the community with the following features :
+            </p>
+            <ul class="custom-list">
+              <li class="d-flex flex-row align-items-center mt-4">
+                <div class="number-list d-flex justify-content-center align-items-center me-3">01</div>
+                <div class="d-flex flex-column">
+                  <dd class="fw-bold">Blood Donors</dd>
+                  <dt class="fw-normal text-muted">Provides a blood donation feature for
+                    simplify the blood donation process.</dt>
+                </div>
+              </li>
+              <li class="d-flex flex-row align-items-center mt-4">
+                <div class="number-list d-flex justify-content-center align-items-center me-3">02</div>
+                <div class="d-flex flex-column">
+                  <dd class="fw-bold">Blood Stock</dd>
+                  <dt class="fw-normal text-muted">Provide accurate information related
+                    availability of blood stock.</dt>
+                </div>
+              </li>
+              <li class="d-flex flex-row align-items-center mt-4">
+                <div class="number-list d-flex justify-content-center align-items-center me-3">03</div>
+                <div class="d-flex flex-column">
+                  <dd class="fw-bold">Rewards</dd>
+                  <dt class="fw-normal text-muted">Provides a blood donation feature for
+                    simplify the blood donation process.</dt>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="right-side col-12 col-md-6">
-          <h3>Featured Advantages</h3>
-          <p class="text-muted">With this, we want to make it easier for the community with the following features :</p>
+    </div>
+  </section>
+  <section class="top-news mt-5">
+    <div class="container">
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <h2 class=" fw-bold">Top News</h2>
+        <button class="show-hide fw-bold" onclick="viewAll()">Show All &nbsp;<i class="fa fa-angle-double-right fw-bold"></i></button>
+      </div>
+      <div class="row" id="title">
+      </div>
+    </div>
+  </section>
+  <section class="see-faq">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h6 class="mt-5" style="color:#a30016;">Newsletter</h6>
+      <h1 class="mt-2" style="font-weight: bold;">Every Client Matters</h1>
+      <p class="text-muted mt-2" style="text-align: center;">Learn more general information through the <br> FAQ page
+      </p>
+      <button type="button" class="btn btn-danger px-5 py-3 mt-2"
+        style="background-color: #a30016; font-size: 10pt;">See FAQ</button>
+    </div>
+  </section>
+  <footer>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-12 col-md-3">
           <ul class="custom-list">
-            <li class="d-flex flex-row align-items-center mt-4">
-              <div class="number-list d-flex justify-content-center align-items-center me-3">01</div>
+            <li class="d-flex">
               <div class="d-flex flex-column">
-                <dd class="fw-bold">Blood Donors</dd>
-                <dt class="fw-normal text-muted">Provides a blood donation feature for
-                  simplify the blood donation process.</dt>
+                <dd class="fw-bold">Company Info</dd>
+                <dt class="fw-normal text-muted mt-3">About Us</dt>
+                <dt class="fw-normal text-muted mt-2">Carrier</dt>
+                <dt class="fw-normal text-muted mt-2">We are hiring</dt>
+                <dt class="fw-normal text-muted mt-2">Blog</dt>
               </div>
             </li>
-            <li class="d-flex flex-row align-items-center mt-4">
-              <div class="number-list d-flex justify-content-center align-items-center me-3">02</div>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <ul class="custom-list">
+            <li class="d-flex">
               <div class="d-flex flex-column">
-                <dd class="fw-bold">Blood Stock</dd>
-                <dt class="fw-normal text-muted">Provide accurate information related
-                  availability of blood stock.</dt>
+                <dd class="fw-bold">Features</dd>
+                <dt class="fw-normal text-muted mt-3">Business Marketing</dt>
+                <dt class="fw-normal text-muted mt-2">User Analytic</dt>
+                <dt class="fw-normal text-muted mt-2">Live Chat</dt>
+                <dt class="fw-normal text-muted mt-2">Unlimited Support</dt>
               </div>
             </li>
-            <li class="d-flex flex-row align-items-center mt-4">
-              <div class="number-list d-flex justify-content-center align-items-center me-3">03</div>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <ul class="custom-list">
+            <li class="d-flex">
               <div class="d-flex flex-column">
-                <dd class="fw-bold">Rewards</dd>
-                <dt class="fw-normal text-muted">Provides a blood donation feature for
-                  simplify the blood donation process.</dt>
+                <dd class="fw-bold">Resources</dd>
+                <dt class="fw-normal text-muted mt-3">IOS & Android</dt>
+                <dt class="fw-normal text-muted mt-2">Watch a Demo</dt>
+                <dt class="fw-normal text-muted mt-2">Customers</dt>
+                <dt class="fw-normal text-muted mt-2">API</dt>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <ul class="custom-list">
+            <li class="d-flex">
+              <div class="d-flex flex-column">
+                <dd class="fw-bold">Get In Touch</dd>
+                <dt class="fw-normal text-muted mt-3">
+                  <div class="d-flex flex-row">
+                    <div class="mr-3">
+                      <img src="img/telpon.png" alt="">
+                      <span class="fw-normal text-muted mt-4 ms-2">+1 (123) 456-7890</span>
+                    </div>
+                  </div>
+                </dt>
+                <dt class="fw-normal text-muted mt-2">
+                  <div class="d-flex flex-row">
+                    <div class="mr-3">
+                      <img src="img/location.png" alt="">
+                      <span class="fw-normal text-muted mt-4 ms-2">Sleman, Yogyakarta</span>
+                    </div>
+                  </div>
+                </dt>
+                <dt class="fw-normal text-muted mt-2">
+                  <div class="d-flex flex-row">
+                    <div class="mr-3">
+                      <img src="img/message.png" alt="">
+                      <span class="fw-normal text-muted mt-4 ms-2">sbloodbags@gmail.com</span>
+                    </div>
+                  </div>
+                </dt>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
+    <div class="footer-down">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="text-white d-flex justify-content-center align-items-center">Made with 💕 © Bloodbags 2022</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="text-white d-flex justify-content-center align-items-center" style="font-size: 24px;">
+              <i class="text-white d-flex justify-content-center align-items-center fa fa-instagram ms-4"></i>
+              <i class="text-white d-flex justify-content-center align-items-center fa fa-facebook-square ms-4"></i>
+              <i class="text-white d-flex justify-content-center align-items-center fa fa-twitter ms-4"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    let data = [];
+    fetch("https://newsapi.org/v2/everything?q=donor%20darah&apiKey=dcc31d57d4b8494cb9ffabeddaffdc1a")
+      .then((x) => x.json())
+      .then((data) => {
+        let output = data.articles;
+        document.getElementById("title").innerHTML = output.slice(0,4).map((x) =>
+          `
+        <div class="col-12 col-md-3 mt-3">
+          <a href="${x.url}" class="text-decoration-none text-dark">
+            <div class="top-news-item">
+              <img src="${x.urlToImage}" class="rounded" width="100%" height="100%" alt="${data.articles[1].title}">
+              <div class="top-news-item-description">
+                <h5 class="fw-bold mt-2">${x.title}</h5>
+                <p><small class="text-muted">${x.publishedAt}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`).join("")
+      }
+      )
+    let button = document.querySelector(".show-hide");
+    let checkButton = false
+    function viewAll() {
+      if (checkButton) {
+        checkButton = false;
+        button.innerHTML = `Show All &nbsp;<i class="fa fa-angle-double-right fw-bold"></i>`;
+        fetch("https://newsapi.org/v2/everything?q=donor%20darah&apiKey=dcc31d57d4b8494cb9ffabeddaffdc1a")
+          .then((x) => x.json())
+          .then((data) => {
+            let output = data.articles;
+            document.getElementById("title").innerHTML = output.slice(0, 4).map((x) =>
+              `
+        <div class="col-12 col-md-3 mt-3">
+          <a href="${x.url}" class="text-decoration-none text-dark">
+            <div class="top-news-item">
+              <img src="${x.urlToImage}" class="rounded" width="100%" height="100%" alt="${data.articles[1].title}">
+              <div class="top-news-item-description">
+                <h5 class="fw-bold mt-2">${x.title}</h5>
+                <p><small class="text-muted">${x.publishedAt}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`).join("")
+          }
+          )
+      } else {
+        checkButton = true;
+        button.innerHTML = `<i class="fa fa-angle-double-left fw-bold"></i>&nbsp; Hide`;
+        fetch("https://newsapi.org/v2/everything?q=donor%20darah&apiKey=dcc31d57d4b8494cb9ffabeddaffdc1a")
+          .then((x) => x.json())
+          .then((data) => {
+            let output = data.articles;
+            document.getElementById("title").innerHTML = output.map((x) =>
+              `
+        <div class="col-12 col-md-3 mt-3">
+          <a href="${x.url}" class="text-decoration-none text-dark">
+            <div class="top-news-item">
+              <img src="${x.urlToImage}" class="rounded" width="100%" height="100%" alt="${data.articles[1].title}">
+              <div class="top-news-item-description">
+                <h5 class="fw-bold mt-2">${x.title}</h5>
+                <p><small class="text-muted">${x.publishedAt}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`).join("")
+          }
+          )
+      }
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
