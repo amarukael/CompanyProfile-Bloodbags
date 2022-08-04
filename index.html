@@ -57,7 +57,7 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-md-6">
           <div class="header-description">
             <h5 class="pb-4" style="color: #a30016;">Welcome!</h5>
             <h1 class="pb-4">"Give and Save, Let's Donate Blood"</h1>
@@ -66,13 +66,13 @@
               Yogyakarta area.
             </p>
 
-            <button type="button" class="btn btn-danger px-4" style="background-color: #a30016;"><i
+            <button onclick="location.href='https://github.com/amarukael/BloodBags/releases/download/tester/bloodbags.apk';" type="button" class="btn btn-danger px-4" style="background-color: #a30016;" ><i
                 class="fa me-2">&#xf019;</i>Download App</button>
             <button type="button" class="btn btn-outline-danger px-5 ms-2"
               style="background-color: white; color: #a30016;">Learn More</button>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-md-6">
           <div class="header-image" style="margin-top: 100px;">
             <img src="/img/image.png" alt="" width="100%" height="100%">
           </div>
@@ -124,8 +124,15 @@
         </div>
     </div>
   </section>
-  <section class="top-news">
-
+  <section class="top-news mt-5">
+    <div class="container">
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <h2 class=" fw-bold">Top News</h2>
+        <button class="show-hide fw-bold" onclick="viewAll()">Show All &nbsp;<i class="fa fa-angle-double-right fw-bold"></i></button>
+      </div>
+      <div class="row" id="title">
+      </div>
+    </div>
   </section>
   <section class="see-faq">
     <div class="container d-flex flex-column justify-content-center align-items-center">
@@ -231,6 +238,77 @@
       </div>
     </div>
   </footer>
+  <script>
+    let data = [];
+    fetch("https://newsapi.org/v2/everything?q=donor%20darah&apiKey=dcc31d57d4b8494cb9ffabeddaffdc1a")
+      .then((x) => x.json())
+      .then((data) => {
+        let output = data.articles;
+        document.getElementById("title").innerHTML = output.slice(0,4).map((x) =>
+          `
+        <div class="col-12 col-md-3 mt-3">
+          <a href="${x.url}" class="text-decoration-none text-dark">
+            <div class="top-news-item">
+              <img src="${x.urlToImage}" class="rounded" width="100%" height="100%" alt="${data.articles[1].title}">
+              <div class="top-news-item-description">
+                <h5 class="fw-bold mt-2">${x.title}</h5>
+                <p><small class="text-muted">${x.publishedAt}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`).join("")
+      }
+      )
+    let button = document.querySelector(".show-hide");
+    let checkButton = false
+    function viewAll() {
+      if (checkButton) {
+        checkButton = false;
+        button.innerHTML = `Show All &nbsp;<i class="fa fa-angle-double-right fw-bold"></i>`;
+        fetch("https://newsapi.org/v2/everything?q=donor%20darah&apiKey=dcc31d57d4b8494cb9ffabeddaffdc1a")
+          .then((x) => x.json())
+          .then((data) => {
+            let output = data.articles;
+            document.getElementById("title").innerHTML = output.slice(0, 4).map((x) =>
+              `
+        <div class="col-12 col-md-3 mt-3">
+          <a href="${x.url}" class="text-decoration-none text-dark">
+            <div class="top-news-item">
+              <img src="${x.urlToImage}" class="rounded" width="100%" height="100%" alt="${data.articles[1].title}">
+              <div class="top-news-item-description">
+                <h5 class="fw-bold mt-2">${x.title}</h5>
+                <p><small class="text-muted">${x.publishedAt}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`).join("")
+          }
+          )
+      } else {
+        checkButton = true;
+        button.innerHTML = `<i class="fa fa-angle-double-left fw-bold"></i>&nbsp; Hide`;
+        fetch("https://newsapi.org/v2/everything?q=donor%20darah&apiKey=dcc31d57d4b8494cb9ffabeddaffdc1a")
+          .then((x) => x.json())
+          .then((data) => {
+            let output = data.articles;
+            document.getElementById("title").innerHTML = output.map((x) =>
+              `
+        <div class="col-12 col-md-3 mt-3">
+          <a href="${x.url}" class="text-decoration-none text-dark">
+            <div class="top-news-item">
+              <img src="${x.urlToImage}" class="rounded" width="100%" height="100%" alt="${data.articles[1].title}">
+              <div class="top-news-item-description">
+                <h5 class="fw-bold mt-2">${x.title}</h5>
+                <p><small class="text-muted">${x.publishedAt}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`).join("")
+          }
+          )
+      }
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

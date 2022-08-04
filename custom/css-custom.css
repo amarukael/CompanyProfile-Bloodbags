@@ -91,9 +91,9 @@ a.li-nav-custom:hover {
   color: #a30016;
 }
 
-/* .top-news{
-
-} */
+.top-news{
+  height: 100%;
+}
 .see-faq{
   height: 45vh;
 }
@@ -107,6 +107,15 @@ footer{
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #a30016;
+}
+
+.show-hide{
+  height: 20px;
+  font-size: 10pt;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #a30016;
 }
 
 @media only screen and (min-width: 600px) {
