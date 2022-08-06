@@ -1,0 +1,129 @@
+.body-home {
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .navbar-custom {
+    background-color: #FFF7F7;
+    font-weight: bold;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #FFF7F7;
+  }
+  
+  header .navbar {
+    background-color: transparent !important;
+  }
+  
+  header .container .row .col-md-6 {
+    height: 90vh;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #a30016;
+    ;
+  }
+  
+  #brand {
+    color: #a30016;
+  }
+  
+  .gayaNav {
+    margin-left: 120px !important;
+  }
+  
+  .dekor1 {
+    z-index: 1;
+    position: absolute;
+    width: 50px;
+    height: 140px;
+    background: #a30016;
+    border-radius: 0px 0px 80px 0px;
+  }
+  
+  .ms-15 {
+    margin-left: 0rem !important;
+  }
+  
+  .ms-10 {
+    margin-left: 5rem !important;
+  }
+  
+  .li-nav-custom {
+    font-size: 14px;
+    color: black !important;
+  }
+  
+  .li-nav-custom {
+    font-size: 14px;
+    color: black !important;
+  }
+  
+  a.li-nav-custom:hover {
+    color: #ff6464 !important;
+  }
+  
+  .active-custom {
+    color: #ff6464 !important;
+  }
+  
+  .visi{
+    height: 100%;
+  }
+  .misi{
+    height: 100%;
+    margin-top: 90px;
+  }
+  
+  footer{
+    background-color: #FFF7F7;
+    font-size: 10pt;
+  }
+  
+  .footer-down{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #a30016;
+  }
+  
+  
+  @media only screen and (min-width: 600px) {
+  
+    /* For tablets: */
+    .dekor1 {
+      z-index: 1;
+      position: absolute;
+      width: 50px;
+      height: 140px;
+      background: #a30016;
+      border-radius: 0px 0px 80px 0px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+  
+    /* For desktop: */
+    .dekor1 {
+      z-index: 1;
+      position: absolute;
+      width: 80px;
+      height: 140px;
+      background: #a30016;
+      border-radius: 0px 0px 80px 0px;
+    }
+  
+    .ms-10 {
+      margin-left: 10rem !important;
+    }
+  
+    .ms-15 {
+      margin-left: 15rem !important;
+    }
+  }
