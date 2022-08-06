@@ -24,7 +24,11 @@
           <img src="/img/logo.png" alt="" width="25" height="25" class="d-inline-block align-text-top" />
           Bloodbags
         </a>
-        <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto ms-10 mt-2">
             <li class="nav-item ms-5">
               <a class="nav-link active-custom li-nav-custom" aria-current="page" href="#">Home</a>
@@ -66,7 +70,9 @@
               Yogyakarta area.
             </p>
 
-            <button onclick="location.href='https://github.com/amarukael/BloodBags/releases/download/tester/bloodbags.apk';" type="button" class="btn btn-danger px-4" style="background-color: #a30016;" ><i
+            <button
+              onclick="location.href='https://github.com/amarukael/BloodBags/releases/download/tester/bloodbags.apk';"
+              type="button" class="btn btn-danger px-4" style="background-color: #a30016;"><i
                 class="fa me-2">&#xf019;</i>Download App</button>
             <button type="button" class="btn btn-outline-danger px-5 ms-2"
               style="background-color: white; color: #a30016;">Learn More</button>
@@ -128,7 +134,8 @@
     <div class="container">
       <div class="d-flex flex-row justify-content-between align-items-center">
         <h2 class=" fw-bold">Top News</h2>
-        <button class="show-hide fw-bold" onclick="viewAll()">Show All &nbsp;<i class="fa fa-angle-double-right fw-bold"></i></button>
+        <button class="show-hide fw-bold" onclick="viewAll()">Show All &nbsp;<i
+            class="fa fa-angle-double-right fw-bold"></i></button>
       </div>
       <div class="row" id="title">
       </div>
@@ -244,7 +251,7 @@
       .then((x) => x.json())
       .then((data) => {
         let output = data.articles;
-        document.getElementById("title").innerHTML = output.slice(0,4).map((x) =>
+        document.getElementById("title").innerHTML = output.slice(0, 4).map((x) =>
           `
         <div class="col-12 col-md-3 mt-3">
           <a href="${x.url}" class="text-decoration-none text-dark">
